@@ -17,7 +17,7 @@ const Dashboard: React.FC = () => {
       </Header>
       <Content>
         <Time>25:00</Time>
-        <Button style={{ width: '100px' }}>Iniciar</Button>
+        <Button style={{ width: 100 }}>Iniciar</Button>
       </Content>
     </Container>
   );
