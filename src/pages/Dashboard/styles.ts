@@ -1,7 +1,8 @@
 import styled from 'styled-components/native';
+
 import { getStatusBarHeight } from 'react-native-iphone-x-helper';
 
-export const Container = styled.View`
+export const Container = styled.ScrollView`
   flex: 1;
 `;
 
@@ -34,4 +35,21 @@ export const Time = styled.Text`
   font-size: 50px;
   font-family: 'Orbitron-Medium';
   line-height: 58px;
+  padding: 20px;
+`;
+
+export const ContainerButtonsTime = styled.View`
+  align-items: center;
+  justify-content: center;
+`;
+
+export const ContentButtonsTime = styled.View`
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const ContainerButtonsAcions = styled.View`
+  align-items: center;
+  justify-content: center;
 `;
