@@ -2,7 +2,6 @@
 import React, { useCallback, useState, useMemo, useEffect } from 'react';
 import { format } from 'date-fns';
 import { Dimensions, Text } from 'react-native';
-import { color } from 'react-native-reanimated';
 import Button from '../../components/Button';
 
 import {
@@ -24,8 +23,6 @@ const Dashboard: React.FC = () => {
   const [baseTime, setBaseTime] = useState(periodTime);
   const [timer, setTimer] = useState(baseTime);
   const [isActive, setIsActive] = useState(false);
-
-  const [selectedTime, setSelectedTime] = useState(baseTime);
 
   useEffect(() => {
     const interval = setInterval(() => {
